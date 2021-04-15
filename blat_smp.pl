@@ -1,4 +1,4 @@
-#!/home/wusy/miniconda2/bin/perl
+#!/usr/bin/perl
 #run blat with Multi CPUs
 #author: gaoshh@big.ac.cn wushy@big.ac.cn
 
