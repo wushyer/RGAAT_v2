@@ -364,9 +364,9 @@ sub sam2variant {
 			if ($record=~/(\d+)(\D+)/) {
 				push (@num,$1);
 				push (@label,$2);
-				$matchlen+=$1 if ($2 eq "M" or $2 eq "I");
-				$SM=$1 if (!defined $SM and $2 eq "M");
-				$EM=$1 if ($2 eq "M");
+				$matchlen+=$1 if ($2 eq "M" or $2 eq "=" or $2 eq "I");
+				$SM=$1 if (!defined $SM and ($2 eq "M" or $2 eq "="));
+				$EM=$1 if ($2 eq "M" or $2 eq "=");
 			}
 		}
 
